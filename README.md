@@ -1,6 +1,32 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name
+React Redux Bookstore
+
+A simple React app that collects and displays books
+> App has a home page and a category page
+> Books added can also be removed as well
+> The Books author and Category are been displayed
+> Books are stored and gotten from an Api
+> Unwanted books can be removed
+> App styled according to recommended style in Zeplin
+
+# LIVE PREVIEW
+> ![demo-gif](./images/bookstore.gif)
+
+# BUILT WITH
+- LANGUAGE:
+> JavaScript
+> Html
+> Css
+- FRAMEWORK:
+>
+- LIBRARY: 
+> React , Redux
+
+# Live links
+# Author
+TUFOIN NKUO
 
 ## Available Scripts
 
