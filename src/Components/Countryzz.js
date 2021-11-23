@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaVirus } from 'react-icons/fa';
 import Country from './Country';
-// import Query from './Query';
+import Query from './Search';
 
 import '../styles/countries.css';
 
