@@ -63,4 +63,78 @@ const CountryInfo = ({ current, image }) => {
     dispatch(dataLoading());
   }, [dispatch]);
 
-  
+  return (
+    <div className="info-container">
+      <div className="header-wrapper">
+        <div className="world-header">
+          <img className="country-map-header" src={image} alt="world map" />
+
+        </div>
+        <div className="country-header-info">
+          <span className="world-cases">{current}</span>
+          <span className="country-total">
+            {' '}
+            {total && Intl.NumberFormat('de-DE').format(total)}
+            {' '}
+
+          </span>
+          <span className="world-cases">Cases</span>
+
+        </div>
+
+      </div>
+
+      <div className="data-of-wrapper">
+        <span className="data-of">
+          {' '}
+          Covid Stats of
+          {' '}
+          {current}
+          {' '}
+        </span>
+
+      </div>
+      <ul className="table-infos">
+        <li className="table-header">
+          <div className="date">Date</div>
+          <div className="date-value">{country.date}</div>
+        </li>
+        {!loading && (
+        <span>
+          <FaVirus className="virus" />
+          {' '}
+        </span>
+        )}
+        {loading && listt.map((row) => (
+
+          <li
+            className="country-details"
+            key={row.id}
+            aria-hidden="true"
+          >
+
+            <div className="metric">{row.text}</div>
+            <div className="metric-value">{row.value}</div>
+            <div className="icon-chev">
+              <BiChevronRightCircle size={20} className="info-ic" color="white" />
+            </div>
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  );
+};
+
+CountryInfo.defaultProps = {
+  current: 'No Country',
+
+};
+
+CountryInfo.propTypes = {
+  current: PropTypes.string,
+  image: PropTypes.string.isRequired,
+
+};
+
+export default CountryInfo;
