@@ -1,27 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Route, Switch } from 'react-router-dom';
+import Navbar from './Nav';
+import Countryzz from './Countryzz';
+import CountryInfo from './CountryInfo';
+import { dataLoading, loadDataThunk, selectData } from '../redux/covid/covid';
+import countryNames from './countryName';
+import '../styles/app.css';
+import Footer from './Footer';
 
 function App() {
+  const countries = useSelector((state) => state.covidReducer.countries);
+  const total = useSelector((state) => state.covidReducer.total);
+  const load = useSelector((state) => state.covidReducer.loading);
+  const currentCntry = useSelector((state) => state.covidReducer.currentCountry);
+  const isoName = countryNames[currentCntry];
+
+  const mapImg = isoName ? `https://raw.githubusercontent.com/djaiss/mapsicon/33ba28808f8d32b5bae0ffada9cadd07073852e1/all/${isoName.toLowerCase()}/vector.svg` : '/World_map.png';
+  const dispatch = useDispatch();
+
+  const handleClick = (country) => dispatch(selectData(country));
+  useEffect(() => {
+    dispatch(dataLoading());
+    dispatch(loadDataThunk());
+  }, [dispatch]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Countryzz countries={countries} total={total} loading={load} handleClick={handleClick} />
+        </Route>
+        <Route exact path="/country">
+          <CountryInfo current={currentCntry} image={mapImg} />
+        </Route>
+      </Switch>
+      <Footer />
+
     </div>
   );
 }
