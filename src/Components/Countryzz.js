@@ -4,7 +4,7 @@ import { FaVirus } from 'react-icons/fa';
 import Country from './Country';
 import Query from './Search';
 
-import '../styles/countries.css';
+// import '../styles/countries.css';
 
 const Countryzz = ({
   Countryzz, total, loading, handleClick,
