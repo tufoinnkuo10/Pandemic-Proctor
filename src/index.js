@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom';
 import App from './Components/App';
 import store from './Redux/configureStore';
 import { loadDataThunk } from './Redux/covid/covid';
-// import './styles/index.css';
+import './sectionStyles/nav.css';
 
 store.dispatch(loadDataThunk());
 

@@ -3,15 +3,14 @@ import PropTypes from 'prop-types';
 import { FaVirus } from 'react-icons/fa';
 import Country from './Country';
 import Query from './Search';
-
-// import '../styles/countries.css';
+import '../sectionStyles/countryzz.css';
 
 const Countryzz = ({
-  Countryzz, total, loading, handleClick,
+  countries, total, loading, handleClick,
 }) => {
-  const [filtered, setFiltered] = useState(Object.keys(Countryzz));
+  const [filtered, setFiltered] = useState(Object.keys(countries));
 
-  const filterCountries = (expression) => Object.keys(Countryzz).filter((country) => {
+  const filterCountries = (expression) => Object.keys(countries).filter((country) => {
     const regex = new RegExp(expression, 'gi');
     return country.match(regex);
   });
@@ -19,8 +18,8 @@ const Countryzz = ({
   const handleChange = (event) => setFiltered(filterCountries(event.target.value));
 
   useEffect(() => {
-    setFiltered(Object.keys(Countryzz));
-  }, [Countryzz]);
+    setFiltered(Object.keys(countries));
+  }, [countries]);
 
   return (
     <div>
@@ -50,7 +49,7 @@ const Countryzz = ({
               <li key={key} className="countries">
                 <Country
                   country={key}
-                  totalConfirmed={Countryzz[key].today_confirmed}
+                  totalConfirmed={countries[key].today_confirmed}
                   handleClick={handleClick}
                 />
               </li>
@@ -59,7 +58,7 @@ const Countryzz = ({
       </ul>
       {!filterCountries.length && !loading && (
       <span>
-        sorry No country !
+        Ooops No countries !
         {' '}
         <FaVirus className="virus" />
         {' '}
@@ -75,7 +74,7 @@ Countryzz.defaultProps = {
 };
 
 Countryzz.propTypes = {
-  Countryzz: PropTypes.objectOf(PropTypes.object).isRequired,
+  countries: PropTypes.objectOf(PropTypes.object).isRequired,
   total: PropTypes.shape({
     today_confirmed: PropTypes.number,
   }),
