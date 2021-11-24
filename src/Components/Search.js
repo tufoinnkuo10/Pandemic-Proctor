@@ -1,6 +1,6 @@
 import React from 'react';
 import Proptypes from 'prop-types';
-// import '../styles/query.css';
+import '../sectionStyles/search.css';
 
 const Query = ({ handleChange }) => (
   <form className="form">

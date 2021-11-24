@@ -4,7 +4,7 @@ import { BiChevronRightCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { dataLoading } from '../Redux/covid/covid';
-import '../sectionStyles/nav.css';
+import '../sectionStyles/countryinfo.css';
 
 const CountryInfo = ({ current, image }) => {
   const dispatch = useDispatch();

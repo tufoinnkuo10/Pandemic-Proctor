@@ -28,12 +28,12 @@ const Countryzz = ({
           <img className="world-map" src="/worldmap.svg" alt="world map" />
         </div>
         <div className="world-info">
-          <span className="world-cases">The world has </span>
+          <span className="world-cases">Roughly </span>
           <span className="world-cases-value">
             {' '}
             {total && Intl.NumberFormat('de-DE').format(total.today_confirmed) }
           </span>
-          <span className="world-cases">Coronavirus Cases </span>
+          <span className="world-cases">Covid world Cases </span>
           <FaVirus className="icon-virus" />
 
         </div>
@@ -58,7 +58,7 @@ const Countryzz = ({
       </ul>
       {!filterCountries.length && !loading && (
       <span>
-        Ooops No countries !
+        Sorry, Check the spelling again !
         {' '}
         <FaVirus className="virus" />
         {' '}
