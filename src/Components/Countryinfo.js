@@ -3,7 +3,7 @@ import { FaVirus } from 'react-icons/fa';
 import { BiChevronRightCircle } from 'react-icons/bi';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { dataLoading } from '../redux/covid/covid';
+import { dataLoading } from '../Redux/covid/covid';
 // import '../styles/countryInfo.css';
 
 const CountryInfo = ({ current, image }) => {

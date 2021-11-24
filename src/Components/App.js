@@ -4,8 +4,8 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './Nav';
 import Countryzz from './Countryzz';
 import CountryInfo from './Countryinfo';
-import { dataLoading, loadDataThunk, selectData } from '../redux/covid/covid';
-import countryNames from './countryName';
+import { dataLoading, loadDataThunk, selectData } from '../Redux/covid/covid';
+import countryNames from './CountryName';
 // import '../sectionStyles/app.css';
 import Footer from './Footer';
 
