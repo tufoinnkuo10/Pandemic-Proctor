@@ -8,7 +8,7 @@ const countryNames = {
   Burundi: 'BR',
   Bushman: 'BU',
   Bushongo: 'BH',
-  Cameroon: 'C',
+  Cameroon: 'CM',
   'Canary Is.': 'CI',
   'Cape Verde': 'CV',
   'Central African Republic': 'CA',

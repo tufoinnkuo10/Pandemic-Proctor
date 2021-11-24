@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillTwitterSquare, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-// import '../styles/footer.css';
+import '../sectionStyles/nav.css';
 
 const Footer = () => (
   <footer className="footer">
