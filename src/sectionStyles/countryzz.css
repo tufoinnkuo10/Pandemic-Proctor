@@ -48,6 +48,7 @@
   font-weight: bolder;
   margin-right: 1rem;
   font-family: 'lato', sans-serif;
+  padding: 4px;
 }
 
 .world-cases-value {
@@ -84,5 +85,30 @@
 @media only screen and (max-width: 800px) {
   .icon-virus {
     margin-left: 3.5rem;
+    color: #008000;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .world-info {
+    padding-left: 40px;
+    padding-bottom: 1rem;
   }
 }

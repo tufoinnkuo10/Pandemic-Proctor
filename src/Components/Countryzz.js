@@ -24,6 +24,9 @@ const Countryzz = ({
   return (
     <div>
       <div className="header-wrapper">
+        <div className="world-header">
+          <i className="world-map" src="worldmapss.png" alt="" />
+        </div>
         <div className="world-info">
           <span className="world-cases">Roughly </span>
           <span className="world-cases-value">
