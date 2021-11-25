@@ -5,6 +5,7 @@ import { BiChevronRightCircle } from 'react-icons/bi';
 import countryName from './CountryName';
 import '../sectionStyles/acountry.css';
 
+// Country.propTypes = {country: PropTypes.string.isRequired,
 const Country = ({
   country, totalConfirmed, handleClick,
 }) => {

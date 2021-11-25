@@ -19,6 +19,8 @@ function App() {
   const mapImg = isoName ? `https://raw.githubusercontent.com/djaiss/mapsicon/33ba28808f8d32b5bae0ffada9cadd07073852e1/all/${isoName.toLowerCase()}/vector.svg` : '/World_map.png';
   const dispatch = useDispatch();
 
+  // const setleclick = firstcountry
+
   const handleClick = (country) => dispatch(selectData(country));
   useEffect(() => {
     dispatch(dataLoading());
