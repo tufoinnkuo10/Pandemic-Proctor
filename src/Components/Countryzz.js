@@ -24,14 +24,11 @@ const Countryzz = ({
   return (
     <div>
       <div className="header-wrapper">
-        <div className="world-header">
-          <img className="world-map" src="/worldmap.svg" alt="world map" />
-        </div>
         <div className="world-info">
           <span className="world-cases">Roughly </span>
           <span className="world-cases-value">
             {' '}
-            {total && Intl.NumberFormat('de-DE').format(total.today_confirmed) }
+            {total && Intl.NumberFormat('de-DE').format(total.today_confirmed)}
           </span>
           <span className="world-cases">Covid world Cases </span>
           <FaVirus className="icon-virus" />
@@ -43,26 +40,26 @@ const Countryzz = ({
       <Query handleChange={handleChange} />
 
       <ul className="countries-list">
-        { filtered && filtered.map((key) => (
+        {filtered && filtered.map((key) => (
           (key !== 'pistolet')
-              && (
-              <li key={key} className="countries">
-                <Country
-                  country={key}
-                  totalConfirmed={countries[key].today_confirmed}
-                  handleClick={handleClick}
-                />
-              </li>
-              )
+          && (
+            <li key={key} className="countries">
+              <Country
+                country={key}
+                totalConfirmed={countries[key].today_confirmed}
+                handleClick={handleClick}
+              />
+            </li>
+          )
         ))}
       </ul>
       {!filterCountries.length && !loading && (
-      <span>
-        Sorry, Check the spelling again !
-        {' '}
-        <FaVirus className="virus" />
-        {' '}
-      </span>
+        <span>
+          Sorry, No match available !
+          {' '}
+          <FaVirus className="virus" />
+          {' '}
+        </span>
       )}
     </div>
   );

@@ -9,8 +9,6 @@ const Footer = () => (
       <div className="copyright-names">
         <div className="creators">
           <p>
-            Author:
-            <br />
             Tufoin
           </p>
           <div className="icons">
@@ -22,7 +20,7 @@ const Footer = () => (
       </div>
     </div>
     <hr />
-    <strong>&#169; Tufoin-Nkuo </strong>
+    <strong className="authorr">&#169; By: Tufoin-Nkuo </strong>
   </footer>
 );
 

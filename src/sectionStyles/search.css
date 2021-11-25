@@ -10,7 +10,12 @@
   width: 15rem;
   margin-left: 2rem;
   height: 1.5rem;
-  background-color: #35548b;
+  background-color: #3a5c97;
+}
+
+.input-search:hover {
+  border: 1px solid wheat;
+  background-color: rgb(82, 65, 82);
 }
 
 input[type="text"] {

@@ -5,7 +5,7 @@ import '../sectionStyles/search.css';
 const Query = ({ handleChange }) => (
   <form className="form">
     <span className="search-by" />
-    <input className="input-search" type="text" placeholder="Enter country name ..." onChange={handleChange} />
+    <input className="input-search" type="text" placeholder="SEARCH: Ctry name" onChange={handleChange} />
   </form>
 );
 

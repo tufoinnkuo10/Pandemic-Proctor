@@ -80,3 +80,9 @@
 .info-icon {
   margin-left: 5rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .icon-virus {
+    margin-left: 3.5rem;
+  }
+}

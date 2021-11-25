@@ -59,6 +59,7 @@ html {
 .footer-container {
   display: flex;
   gap: 1rem;
+  padding-left: 14rem;
 }
 
 .footer {
@@ -86,7 +87,7 @@ html {
 }
 
 .fab {
-  color: black;
+  color: #260df5;
   width: 2rem;
   height: 2rem;
 }
@@ -98,4 +99,33 @@ small {
   letter-spacing: 0.3rem;
   word-spacing: 1rem;
   margin-left: 5rem;
+}
+
+.creators {
+  padding-left: 35rem;
+}
+
+.authorr {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+    max-width: 51%;
+    padding-left: 6rem;
+  }
+
+  .creators {
+    padding-left: 0rem;
+  }
+
+  .creators p {
+    font-size: 1.5rem;
+  }
+
+  .authorr {
+    font-size: 1.5rem;
+  }
+
+
 }
