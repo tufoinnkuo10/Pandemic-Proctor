@@ -1,7 +1,7 @@
 import { covidReducer, selectData } from '../../Redux/covid/covid';
 
-describe('reducer works !', () => {
-  test('reducer returns initial state', () => {
+describe('reducer test !', () => {
+  test('reducer to returns initial state', () => {
     expect(covidReducer(undefined, {})).toEqual({ countries: {} });
   });
   test('reducer updates  state', () => {
