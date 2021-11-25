@@ -26,9 +26,9 @@ const Country = ({
           handleClick(country);
         }}
       >
+        <BiChevronRightCircle size={20} className="info-icon" color="white" />
         <img className="country-map" alt="map" src={mapImg} width="100" height="100" />
         <div className="country-data">
-          <BiChevronRightCircle size={20} className="info-icon" color="white" />
           <h1 className="country-name">{country.toUpperCase()}</h1>
           <span className="total-confirmed">{Intl.NumberFormat('de-DE').format(totalConfirmed)}</span>
         </div>

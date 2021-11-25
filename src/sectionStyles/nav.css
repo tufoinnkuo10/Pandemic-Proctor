@@ -3,7 +3,8 @@ nav {
   display: flex;
   gap: 10rem;
   margin-bottom: 1rem;
-  max-width: 5rem;
+
+  /* max-width: 5rem; */
   padding-top: 1rem;
 }
 
@@ -36,26 +37,24 @@ nav {
   margin-left: -4rem;
 }
 
-/*app*/
+/* app */
 .app {
   background-color: #4369b2;
 }
 
-/*country*/
+/* country */
 
 body {
   background-color: #4369b2;
   overflow-x: hidden;
-  margin-left: -10px;
-  margin-right: -13px;
 }
 
-html {
-  width: 129%;
-  margin-left: -0.5rem;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/*footer*/
+/* footer */
 .footer-container {
   display: flex;
   gap: 1rem;
@@ -130,12 +129,13 @@ small {
 
 @media only screen and (max-width: 950px) {
   .app {
-    max-width: 51%;
-    padding-left: 6rem;
+    /* max-width: 51%; */
+
+    /* padding-left: 6rem; */
   }
 
   .creators {
-    padding-left: 0rem;
+    padding-left: 0;
   }
 
   .creators p {
@@ -145,8 +145,4 @@ small {
   .authorr {
     font-size: 1.5rem;
   }
-
-  
-
-
 }

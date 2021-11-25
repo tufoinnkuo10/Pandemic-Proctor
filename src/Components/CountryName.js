@@ -24,7 +24,7 @@ const countryNames = {
   Guinea: 'GU',
   Hottentot: 'HO',
   'Ivory Coast': 'IC',
-  Kenya: 'KY',
+  Kenya: 'KE',
   Lesotho: 'LE',
   Liberia: 'LI',
   Libya: 'LB',
