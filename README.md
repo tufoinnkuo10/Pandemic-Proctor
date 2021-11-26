@@ -12,7 +12,7 @@ A simple React app that collects and displays books
 > App styled according to recommended style in Zeplin
 
 # LIVE PREVIEW
-> ![demo-gif](./images/bookstore.gif)
+> ![demo-gif](./images/maps.gif)
 
 # TEST
 > ![Test](./images/te.png)
@@ -27,7 +27,8 @@ A simple React app that collects and displays books
 - LIBRARY: 
 > React , Redux
 
-# Live links
+# NETLIFY
+> [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
 
 
 👤 **Author**

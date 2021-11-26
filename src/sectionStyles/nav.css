@@ -58,7 +58,6 @@ ul {
 .footer-container {
   display: flex;
   gap: 1rem;
-  padding-left: 14rem;
 }
 
 .footer {
