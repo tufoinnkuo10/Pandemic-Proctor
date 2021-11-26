@@ -3,19 +3,18 @@
 # Project Name
 Pandemic proctor
 
-A simple React app that collects and displays books
-> App has a home page and a category page
-> Books added can also be removed as well
-> The Books author and Category are been displayed
-> Books are stored and gotten from an Api
-> Unwanted books can be removed
-> App styled according to recommended style in Zeplin
+A SPA app that tracks and publish information concerning the global pandemic. The app functions as follows
+> App has a home page presenting all the countries and the details page
+> You can search for a particular country in the search bar
+> The chosen country when clicked takes you to the details page
+> Countries and details are gotten and stored in the API
+> App styled according to recommended style BEHANCE by Nelson Sakwa
 
 # LIVE PREVIEW
 > ![demo-gif](./images/maps.gif)
 
 # TEST
-> ![Test](./images/te.png)
+> ![Test](./images/test.png)
 
 # BUILT WITH
 - LANGUAGE:
@@ -26,6 +25,8 @@ A simple React app that collects and displays books
 >
 - LIBRARY: 
 > React , Redux
+
+- External API
 
 # NETLIFY
 > [LIVE PREVIEW](https://space-ships-and-missions.netlify.app/)
