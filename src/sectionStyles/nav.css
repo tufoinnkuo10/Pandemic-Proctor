@@ -1,0 +1,140 @@
+nav {
+  background-color: #4369b2;
+  display: flex;
+  gap: 10rem;
+  margin-bottom: 1rem;
+
+  /* max-width: 5rem; */
+  padding-top: 1rem;
+}
+
+.location {
+  color: white;
+  font-family: 'lato', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.location-path {
+  display: flex;
+  margin-left: 4rem;
+}
+
+.back {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'lato', sans-serif;
+}
+
+/* app */
+.app {
+  background-color: #4369b2;
+}
+
+/* country */
+
+body {
+  background-color: #4369b2;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* footer */
+.footer-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  background-color: #4369b2;
+}
+
+.creators p {
+  color: black;
+  font-family: 'Red Hat Mono', monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 11.5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 15rem;
+}
+
+.fab {
+  color: #260df5;
+  width: 2rem;
+  height: 2rem;
+}
+
+small {
+  align-self: center;
+  padding-bottom: 1rem;
+  font-family: 'Red Hat Mono', monospace;
+  letter-spacing: 0.3rem;
+  word-spacing: 1rem;
+  margin-left: 5rem;
+}
+
+.creators {
+  padding-left: 35rem;
+}
+
+.authorr {
+  padding: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 950px) {
+  .app {
+    /* max-width: 51%; */
+
+    /* padding-left: 6rem; */
+  }
+
+  .creators {
+    padding-left: 0;
+  }
+
+  .creators p {
+    font-size: 1.5rem;
+  }
+
+  .authorr {
+    font-size: 1.5rem;
+  }
+}
