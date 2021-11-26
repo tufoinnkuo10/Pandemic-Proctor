@@ -30,13 +30,6 @@ nav {
   font-family: 'lato', sans-serif;
 }
 
-.icons {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  margin-left: -4rem;
-}
-
 /* app */
 .app {
   background-color: #4369b2;
@@ -83,6 +76,13 @@ ul {
   gap: 1rem;
   margin-left: 15rem;
 }
+
+/*.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: -4rem;
+}*/
 
 .fab {
   color: #260df5;
